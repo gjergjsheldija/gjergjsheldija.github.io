@@ -1,0 +1,27 @@
+<figure class='code-highlight-figure'><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="c">#!/bin/bash</span>
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-lt 3 <span class="o">]</span> ; <span class="k">then</span>
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'>cat <span class="sh">&lt;&lt;HELP
+</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>create-changeset -- creates a tar.gz file with the changed files
+</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>USAGE: create-changeset 'repository-path' 'revision-from' 'revision-to'
+</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'>EXAMPLE: create-changeset /var/www/survey 4 5
+</div></div><div data-line='8' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='9' class='code-highlight-row numbered'><div class='code-highlight-line'>HELP</span>
+</div></div><div data-line='10' class='code-highlight-row numbered'><div class='code-highlight-line'>  <span class="nb">exit </span>0
+</div></div><div data-line='11' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="k">fi
+</div></div><div data-line='12' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='13' class='code-highlight-row numbered'><div class='code-highlight-line'></span>
+</div></div><div data-line='14' class='code-highlight-row numbered'><div class='code-highlight-line'>mkdir /tmp/project
+</div></div><div data-line='15' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='16' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="c">## changed files</span>
+</div></div><div data-line='17' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="nb">cd</span> <span class="nv">$1</span>
+</div></div><div data-line='18' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='19' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="k">for </span>changed_files <span class="k">in</span> <span class="sb">`</span>hg log --rev <span class="nv">$2</span>:<span class="nv">$3</span> --template <span class="s1">'&#x7b;files&#x7d;\n'</span><span class="sb">`</span>
+</div></div><div data-line='20' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="k">do
+</div></div><div data-line='21' class='code-highlight-row numbered'><div class='code-highlight-line'>    </span>cp --parents <span class="nv">$changed_files</span> /tmp/project
+</div></div><div data-line='22' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="k">done</span>
+</div></div><div data-line='23' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='24' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='25' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="c">## list of removed files</span>
+</div></div><div data-line='26' class='code-highlight-row numbered'><div class='code-highlight-line'>hg log --rev <span class="nv">$2</span>:<span class="nv">$3</span> --template <span class="s1">'&#x7b;files_dels&#x7d;\n'</span> &gt; removed_files.txt
+</div></div><div data-line='27' class='code-highlight-row numbered'><div class='code-highlight-line'>mv removed_files.txt /tmp/project
+</div></div><div data-line='28' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='29' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="c">## changelog</span>
+</div></div><div data-line='30' class='code-highlight-row numbered'><div class='code-highlight-line'>hg log --rev <span class="nv">$2</span>:<span class="nv">$3</span> --style changelog &gt; changelog
+</div></div><div data-line='31' class='code-highlight-row numbered'><div class='code-highlight-line'>mv changelog /tmp/project
+</div></div><div data-line='32' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='33' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="nb">cd</span> /tmp/project
+</div></div><div data-line='34' class='code-highlight-row numbered'><div class='code-highlight-line'>tar -czf changes.<span class="nv">$2</span>-<span class="nv">$3</span>.tar.gz <span class="k">*</span>
+</div></div><div data-line='35' class='code-highlight-row numbered'><div class='code-highlight-line'>mv changes.<span class="nv">$2</span>-<span class="nv">$3</span>.tar.gz <span class="nv">$1</span>
+</div></div><div data-line='36' class='code-highlight-row numbered'><div class='code-highlight-line'>rm -rf /tmp/project</div></div></pre></div></figure>

@@ -1,0 +1,16 @@
+<figure class='code-highlight-figure'><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>SELECT 
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'>	table_schema, 
+</div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'>	TABLE_NAME, 
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'>	column_name, 
+</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>	character_set_name, 
+</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>	collation_name
+</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'>FROM 
+</div></div><div data-line='8' class='code-highlight-row numbered'><div class='code-highlight-line'>	information_schema.COLUMNS
+</div></div><div data-line='9' class='code-highlight-row numbered'><div class='code-highlight-line'>WHERE 
+</div></div><div data-line='10' class='code-highlight-row numbered'><div class='code-highlight-line'>	collation_name = ‘latin1_swedish_ci’
+</div></div><div data-line='11' class='code-highlight-row numbered'><div class='code-highlight-line'>	AND 
+</div></div><div data-line='12' class='code-highlight-row numbered'><div class='code-highlight-line'>	table_schema = ‘siis_qsut’
+</div></div><div data-line='13' class='code-highlight-row numbered'><div class='code-highlight-line'>ORDER BY 
+</div></div><div data-line='14' class='code-highlight-row numbered'><div class='code-highlight-line'>	table_schema, 
+</div></div><div data-line='15' class='code-highlight-row numbered'><div class='code-highlight-line'>	TABLE_NAME,
+</div></div><div data-line='16' class='code-highlight-row numbered'><div class='code-highlight-line'>	ordinal_position</div></div></pre></div></figure>

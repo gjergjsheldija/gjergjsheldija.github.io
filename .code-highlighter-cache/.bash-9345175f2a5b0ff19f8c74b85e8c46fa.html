@@ -1,0 +1,4 @@
+<figure class='code-highlight-figure'><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>smbldap-useradd -a -m -P adminpdc  
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'>smbldap-groupmod -m <span class="s1">' adminpdc'</span> <span class="s1">'Administrators'</span>  
+</div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'>smbldap-groupmod -m <span class="s1">' adminpdc'</span> <span class="s1">'Domain Admins'</span>  
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'>sudo auth-client-config -t nss -p lac_ldap</div></div></pre></div></figure>

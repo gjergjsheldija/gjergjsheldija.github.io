@@ -1,0 +1,25 @@
+<figure class='code-highlight-figure'><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>dn: <span class="nv">cn</span><span class="o">=</span>module,cn<span class="o">=</span>config
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'>objectClass: olcModuleList
+</div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'>cn: module
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'>olcModulepath: /usr/lib/ldap
+</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>olcModuleload: back_hdb
+</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>dn: <span class="nv">olcDatabase</span><span class="o">=</span>hdb,cn<span class="o">=</span>config
+</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'>objectClass: olcDatabaseConfig
+</div></div><div data-line='8' class='code-highlight-row numbered'><div class='code-highlight-line'>objectClass: olcHdbConfig
+</div></div><div data-line='9' class='code-highlight-row numbered'><div class='code-highlight-line'>olcDatabase: <span class="o">&#x7b;</span>1<span class="o">&#x7d;</span>hdb
+</div></div><div data-line='10' class='code-highlight-row numbered'><div class='code-highlight-line'>olcSuffix: <span class="nv">dc</span><span class="o">=</span>pdc
+</div></div><div data-line='11' class='code-highlight-row numbered'><div class='code-highlight-line'>olcDbDirectory: /var/lib/ldap
+</div></div><div data-line='12' class='code-highlight-row numbered'><div class='code-highlight-line'>olcRootDN: <span class="nv">cn</span><span class="o">=</span>admin,dc<span class="o">=</span>pdc
+</div></div><div data-line='13' class='code-highlight-row numbered'><div class='code-highlight-line'>olcRootPW: pwd123
+</div></div><div data-line='14' class='code-highlight-row numbered'><div class='code-highlight-line'>olcDbConfig: set_cachesize 0 2097152 0
+</div></div><div data-line='15' class='code-highlight-row numbered'><div class='code-highlight-line'>olcDbConfig: set_lk_max_objects 1500
+</div></div><div data-line='16' class='code-highlight-row numbered'><div class='code-highlight-line'>olcDbConfig: set_lk_max_locks 1500
+</div></div><div data-line='17' class='code-highlight-row numbered'><div class='code-highlight-line'>olcDbConfig: set_lk_max_lockers 1500
+</div></div><div data-line='18' class='code-highlight-row numbered'><div class='code-highlight-line'>olcDbIndex: objectClass eq
+</div></div><div data-line='19' class='code-highlight-row numbered'><div class='code-highlight-line'>olcLastMod: TRUE
+</div></div><div data-line='20' class='code-highlight-row numbered'><div class='code-highlight-line'>olcDbCheckpoint: 512 30
+</div></div><div data-line='21' class='code-highlight-row numbered'><div class='code-highlight-line'>olcAccess: to <span class="nv">attrs</span><span class="o">=</span>userPassword by <span class="nv">dn</span><span class="o">=</span><span class="s2">"cn=admin,dc=pdc"</span> write by anonymous
+</div></div><div data-line='22' class='code-highlight-row numbered'><div class='code-highlight-line'>auth by self write by <span class="k">*</span> none
+</div></div><div data-line='23' class='code-highlight-row numbered'><div class='code-highlight-line'>olcAccess: to <span class="nv">attrs</span><span class="o">=</span>shadowLastChange by self write by <span class="k">*</span> <span class="nb">read</span>
+</div></div><div data-line='24' class='code-highlight-row numbered'><div class='code-highlight-line'>olcAccess: to dn.base<span class="o">=</span><span class="s2">""</span> by <span class="k">*</span> <span class="nb">read</span>
+</div></div><div data-line='25' class='code-highlight-row numbered'><div class='code-highlight-line'>olcAccess: to <span class="k">*</span> by <span class="nv">dn</span><span class="o">=</span><span class="s2">"cn=admin,dc=pdc"</span> write by <span class="k">*</span> <span class="nb">read</span></div></div></pre></div></figure>

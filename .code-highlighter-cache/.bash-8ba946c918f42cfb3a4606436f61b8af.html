@@ -1,0 +1,17 @@
+<figure class='code-highlight-figure'><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>Sub Main
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'>    Dim oDoc,FandR,oFound
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'>    oDoc <span class="o">=</span> ThisComponent
+</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>    FandR <span class="o">=</span> oDoc.createSearchDescriptor
+</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>    FandR.ValueSearch <span class="o">=</span> False
+</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='8' class='code-highlight-row numbered'><div class='code-highlight-line'>    Dim args<span class="o">(</span>0<span class="o">)</span> as new com.sun.star.beans.PropertyValue
+</div></div><div data-line='9' class='code-highlight-row numbered'><div class='code-highlight-line'>    args<span class="o">(</span>0<span class="o">)</span>.Name <span class="o">=</span> “HyperLinkEvents”
+</div></div><div data-line='10' class='code-highlight-row numbered'><div class='code-highlight-line'>    args<span class="o">(</span>0<span class="o">)</span>.Value <span class="o">=</span> ””
+</div></div><div data-line='11' class='code-highlight-row numbered'><div class='code-highlight-line'>    FandR.SetSearchAttributes<span class="o">(</span>args<span class="o">())</span>
+</div></div><div data-line='12' class='code-highlight-row numbered'><div class='code-highlight-line'>    oFound <span class="o">=</span> oDoc.FindFirst<span class="o">(</span>FandR<span class="o">)</span>
+</div></div><div data-line='13' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='14' class='code-highlight-row numbered'><div class='code-highlight-line'>    While Not isNull<span class="o">(</span>oFound<span class="o">)</span>
+</div></div><div data-line='15' class='code-highlight-row numbered'><div class='code-highlight-line'>     oFound.HyperLinkURL <span class="o">=</span> ””
+</div></div><div data-line='16' class='code-highlight-row numbered'><div class='code-highlight-line'>     oFound.HyperLinkName <span class="o">=</span> ””
+</div></div><div data-line='17' class='code-highlight-row numbered'><div class='code-highlight-line'>     oFound.HyperLinkTarget <span class="o">=</span> ””
+</div></div><div data-line='18' class='code-highlight-row numbered'><div class='code-highlight-line'>     oFound <span class="o">=</span> oDoc.FindNext<span class="o">(</span>oFound.End,FandR<span class="o">)</span>
+</div></div><div data-line='19' class='code-highlight-row numbered'><div class='code-highlight-line'>    Wend 
+</div></div><div data-line='20' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='21' class='code-highlight-row numbered'><div class='code-highlight-line'>End Sub</div></div></pre></div></figure>
