@@ -12,7 +12,7 @@ comments: true
 ---
 postgres change column type from boolean to integer
 
-{% codeblock lang:sql %}
+```sql
 ALTER TABLE table_name ALTER column_name SET DEFAULT null;
  
 ALTER TABLE table_name
@@ -24,4 +24,4 @@ END;
  
 ALTER TABLE table_name ALTER column_name SET DEFAULT 0;
 COMMIT;
-{% endcodeblock %}
+```

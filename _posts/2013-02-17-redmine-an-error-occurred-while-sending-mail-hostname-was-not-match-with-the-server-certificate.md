@@ -12,8 +12,8 @@ comments: true
 ---
 quick fix for a silly error i was having today with redmine not sending email anymore. 
 open config/environment.rb and add the following lines
-{% codeblock lang:ruby %}
+```ruby
 ActionMailer::Base::raise_delivery_errors = true
 ActionMailer::Base::smtp_settings[:enable_starttls_auto] = false 
-{% endcodeblock %}
+```
 it should solve the problem

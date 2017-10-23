@@ -18,29 +18,29 @@ now locate and open **FramesetFragment.jsp** in **WebViewerExample/webcontent/bi
 and **TextBoxParameterFragment.jsp** in **WebViewerExample/webcontent/birt/pages/parameter**
 now in the **FramesetFragment.jsp** insert those lines before the closing head tag
 
-{% codeblock lang:html %}
+```html
     <link href="birt/calendar/css/jscal2.css" rel="stylesheet" type="text/css"></link >
     <link href="birt/calendar/css/border-radius.css" rel="stylesheet" type="text/css"></link>
     <link href="birt/calendar/css/win2k/win2k.css" rel="stylesheet" type="text/css"></link>
     <script src="birt/calendar/js/jscal2.js" type="text/javascript"></script>
     <script src="birt/calendar/js/lang/en.js" type="text/javascript"></script>
-{% endcodeblock %}
+```
 
 and in TextBoxParameterFragment.jsp just after
 
-{% codeblock lang:html %}
+```html
 <INPUT TYPE="HIDDEN" ID="isRequired" VALUE = "<%= parameterBean.isRequired( )? "true": "false" %>">
-{% endcodeblock %}
+```
 
 replace
 
-{% codeblock lang:html %}
+```html
  <INPUT TYPE="HIDDEN" ID="isRequired" VALUE = "<%= parameterBean.isRequired( )? "true": "false" %>">
-{% endcodeblock %}
+```
 
 with
 
-{% codeblock lang:html %}
+```html
 <INPUT TYPE="HIDDEN" ID="isRequired"
             VALUE = "<%= parameterBean.isRequired( )? "true": "false" %>">
 
@@ -63,7 +63,7 @@ with
 
     </TD>
 </TR>
-{% endcodeblock %}
+```
 
 you may have noticed that i have extracted the contents of the src folder into **WebViewerExample/webcontent/birt/calendar**
 

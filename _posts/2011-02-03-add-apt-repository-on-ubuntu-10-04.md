@@ -12,6 +12,6 @@ comments: true
 in you're playing around with ubuntu 10.04 and you get something like : sudo add-apt-repository .. 
 you can quickly fix it by :
 
-{% codeblock lang:bash %}
+```bash
 sudo apt-get install python-software-properties
-{% endcodeblock%} 
+```

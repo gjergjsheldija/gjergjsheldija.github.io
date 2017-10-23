@@ -14,6 +14,6 @@ comments: true
 ---
 usually happens when you disable your touchpad and then suspend your computer. to fix this just run this command:
 
-{% codeblock lang:bash %}
+```bash
 gconftool-2 --set --type boolean /desktop/gnome/peripherals/touchpad/touchpad_enabled true
-{% endcodeblock%} 
+```

@@ -16,7 +16,7 @@ comments: true
 ---
 working on a project hosted on a shared hosting, with limited resources, i had to find a way to update my working copy with the testing and the production server..and after some tinkering this is the result. hope it's usefull
 
-{% codeblock lang:xml %}
+```xml
 <?xml version="1.0"?>
 <project name="project_sync" basedir="." default="-init">
   <property name="version" value="4.0"/>
@@ -142,11 +142,11 @@ working on a project hosted on a shared hosting, with limited resources, i had t
   </target>
 </project>
 
-{% endcodeblock %}
+```
   
 the configuration files are as follows 
 
-{% codeblock lang:ini [database.properties] %}
+```ini [database.properties]
 # database connection properties
 # to be updated on a server basis
 sync.source.projectdir=/home/xxxx/www/website/
@@ -156,9 +156,9 @@ sync.database.host=localhost
 sync.database.user=db_user
 sync.database.password=db_password
 production.properties
-{% endcodeblock %}
+```
 
-{% codeblock lang:ini [production.properties] %}
+```ini [production.properties] 
 # production server properties
 sync.source.projectdir=/var/www/website/
 sync.destination.projectdir=/home/client/www/
@@ -167,12 +167,12 @@ sync.remote.user=remote_user
 sync.destination.backupdir=hostname.com/website/backup
 sync.exclude.file=/var/www/website/build/sync.exclude
 sync.verbose=false 
-{% endcodeblock %}
+```
 
 test.properties is identical to production.properties except for the values.
 
 
-{% codeblock lang:bash [sync.exclude] %}
+```bash [sync.exclude]
 .*/
 .buildpath
 .project
@@ -180,14 +180,14 @@ test.properties is identical to production.properties except for the values.
 cache
 build
 uploads
-{% endcodeblock %}
+```
 
 changesets.sql is the table containing the changesets
 
-{% codeblock lang:mysql [changesets.sql] %}
+```sql [changesets.sql]
 CREATE TABLE IF NOT EXISTS `changelog` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `delta` VARCHAR(30) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-{% endcodeblock %}
+```

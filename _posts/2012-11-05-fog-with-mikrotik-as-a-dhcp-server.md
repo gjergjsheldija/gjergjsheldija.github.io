@@ -19,8 +19,8 @@ after some hacking, googling and good luck, finally was able to do it.
 and it was not what the manual or helps int he forums say.
 you need to go to the terminal and issue the following commands :
 
-{% codeblock lang:bash %}
+```bash
 /ip dhcp-server network set 0 boot-file-name=undionly.kkpxe next-server=10.10.0.2
-{% endcodeblock %}
+```
 
 and, they are not going to show in the network properties and neither the console..

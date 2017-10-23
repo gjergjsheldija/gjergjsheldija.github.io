@@ -22,17 +22,17 @@ comments: true
 a very straightforward post on how to add the chosen plugin to select boxes in birt.
 first download the chosen plugin from https://harvesthq.github.io/chosen/ and extract the files in webcontent/birt/js.
 then edit webcontent/birt/pages/layout/FramesetFramgment.jsp and add
-{% codeblock lang:html %}
+```html
 <link rel="stylesheet" href="birt/js/chosen.min.css">
 <script src="birt/js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="birt/js/chosen.jquery.min.js" type="text/javascript"></script>
 <script>
 var $jQuery = jQuery.noConflict();
 </script>
-{% endcodeblock %}
+```
 
 and webcontent/birt/pages/parameter/ComboBoxParameterFragment.jsp and add the following code at the end of  the file
-{% codeblock lang:javascript %}
+```javascript
 <script>
 var setInt;
 $jQuery("#<%= encodedParameterName + "_selection"%>")
@@ -47,5 +47,5 @@ $jQuery("#<%= encodedParameterName + "_selection"%>")
 		}, 100);
 });
 </script>
-{% endcodeblock %}
+```
 

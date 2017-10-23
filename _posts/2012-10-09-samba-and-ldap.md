@@ -58,7 +58,7 @@ Set a static IP, in this example the NIC card is eth0 and the network is part of
 
 nano /etc/network/interfaces
 
-{% codeblock lang:bash %}
+```bash
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -66,14 +66,14 @@ address 192.168.1.10
 broadcast 192.168.1.255
 netmask 255.255.255.0
 gateway 192.168.1.1
-{% endcodeblock %}
+```
 
 3)
 
-{% codeblock lang:bash %}
+```bash
 /etc/init.d/networking restart  
 ifconfig
-{% endcodeblock %}
+```
 
 The output should show you the static IP, try pinging a local IP or an
 internet IP to be sure you are on the net, ex:
@@ -92,21 +92,21 @@ STOP WORKING.
 
 4)
 
-{% codeblock lang:bash %}
+```bash
 apt-get update  
 apt-get dist-upgrade  
 reboot  
 sudo su
-{% endcodeblock %}
+```
 
 5)
 
-{% codeblock lang:bash %}
+```bash
 apt-get install slapd ldap-utils  
 ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/ldap/schema/cosine.ldif  
 ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/ldap/schema/nis.ldif  
 ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/ldap/schema/inetorgperson.ldif
-{% endcodeblock %}
+```
 
 6)
 
@@ -116,7 +116,7 @@ Your next step will be to modify this file, the only thing you should care of ch
 
 nano backend.example.com.ldif
 
-{% codeblock lang:bash %}
+```bash
 dn: cn=module,cn=config
 objectClass: olcModuleList
 cn: module
@@ -142,29 +142,29 @@ auth by self write by * none
 olcAccess: to attrs=shadowLastChange by self write by * read
 olcAccess: to dn.base="" by * read
 olcAccess: to * by dn="cn=admin,dc=pdc" write by * read
-{% endcodeblock %}
+```
 
 7)
 
 From now on, if ldap commands similar to this ask for a password, put password set above in step 6, by default in this guide as said "pwd123″.
 
-{% codeblock lang:bash %}
+```bash
 ldapadd -Y EXTERNAL -H ldapi:/// -f backend.example.com.ldif
-{% endcodeblock %}
+```
 
 8)
 
-{% codeblock lang:bash %}
+```bash
 apt-get install samba samba-doc libpam-smbpass smbclient smbldap-tools
-{% endcodeblock %}
+```
 
 9)
 
 Now I'll make you download my samba configuration file.
 
-{% codeblock lang:bash %}
+```bash
 wget http://acme-tech.net/blog/http://acme-tech.net/blog/wp-content/uploads/2012/10/smb.conf_.txt
-{% endcodeblock %}
+```
 
 After downloading it, you'll have to change ONLY two values: "workgroup = "
 and "netbios = ".
@@ -181,62 +181,62 @@ CHANGE IT AGAIN OTHERWISE IT WILL BREAK EVERYTHING! YOU'VE BEEN WARNED.
 
 Type the following and change the two values.
 
-{% codeblock lang:bash %}
+```bash
 nano smb.conf
-{% endcodeblock %}
+```
 
 Once you changed the two values type:
 
-{% codeblock lang:bash %}
+```bash
 cp -rf smb.conf /etc/samba/smb.conf
-{% endcodeblock %}
+```
 
 10)
 
 In the next command it will prompt you to put a password, this must be the
 same as set before in step 6, by default in this guide "pwd123″
 
-{% codeblock lang:bash %}
+```bash
 smbpasswd -W
-{% endcodeblock %}
+```
 
 11)
 
-{% codeblock lang:bash %}
+```bash
 ervice smbd restart
-{% endcodeblock %}
+```
 
 12)
 
 Now you must check that samba is running, it will ask you for a password, just
 hit Enter.
 
-{% codeblock lang:bash %}
+```bash
 smbclient -L localhost
-{% endcodeblock %}
+```
 
 It should not give you any errors, instead it must show some stuff and you
 should see your Workgroup Name set in step 9
 
 13)
 
-{% codeblock lang:bash %}
+```bash
 mkdir -v /var/lib/samba/profiles  
 chmod 777 /var/lib/samba/profiles  
 mkdir -v -p /var/lib/samba/netlogon  
 chmod 777 /var/lib/samba/netlogon  
 cp /usr/share/doc/samba-doc/examples/LDAP/samba.schema.gz /etc/ldap-&gt; /schema/  
 gzip -d /etc/ldap/schema/samba.schema.gz
-{% endcodeblock %}
+```
 
 14)
 
-{% codeblock lang:bash %}
+```bash
 schema_convert.conf  
 nano schema_convert.conf
-{% endcodeblock %}
+```
 
-{% codeblock lang:bash %}
+```bash
 include /etc/ldap/schema/core.schema
 include /etc/ldap/schema/collective.schema
 include /etc/ldap/schema/corba.schema
@@ -250,23 +250,23 @@ include /etc/ldap/schema/nis.schema
 include /etc/ldap/schema/openldap.schema
 include /etc/ldap/schema/ppolicy.schema
 include /etc/ldap/schema/samba.schema
-{% endcodeblock %}
+```
 
 15)
 
-{% codeblock lang:bash %}
+```bash
 mkdir /tmp/ldif_output  
 slapcat -f schema_convert.conf -F /tmp/ldif_output -n0 -s "cn={12}samba,cn=schema,cn=config" > /tmp/cn=samba.ldif
-{% endcodeblock %}
+```
 
 16)
 
 Now you'll have to edit a file, open the file with the following command and
 read below to understand what must be edited.
 
-{% codeblock lang:bash %}
+```bash
 nano /tmp/cn\=samba.ldif
-{% endcodeblock %}
+```
 
 At the very top you'll see:
 
@@ -285,7 +285,7 @@ Change it to:
 cn: samba
 
 At the end of the file you'll see:
-{% codeblock lang:bash %}
+```bash
 structuralObjectClass: olcSchemaConfig
 entryUUID: b53b75ca-083f-102d-9fff-2f64fd123c95
 creatorsName: cn=config
@@ -293,7 +293,7 @@ createTimestamp: 20080827045234Z
 entryCSN: 20080827045234.341425Z#000000#000#000000
 modifiersName: cn=config
 modifyTimestamp: 20080827045234Z
-{% endcodeblock %}
+```
 
 Delete all those lines, save and close.
 
@@ -301,13 +301,13 @@ Delete all those lines, save and close.
 
 Be sure the following command does not give errors:
 
-{% codeblock lang:bash %}
+```bash
 ldapadd -Y EXTERNAL -H ldapi:/// -D cn=admin,cn=config -W -f /tmp/cn\=samba.ldif
-{% endcodeblock %}
+```
 
 18)
 
-{% codeblock lang:bash %}
+```bash
 samba_indexes.ldif  
 nano samba_indexes.ldif
 
@@ -326,15 +326,15 @@ olcDbIndex: sambaGroupType eq
 olcDbIndex: sambaSIDList eq
 olcDbIndex: sambaDomainName eq
 olcDbIndex: default sub
-{% endcodeblock %}
+```
 
 19)
 
 Be sure the following does not give any errors.
 
-{% codeblock lang:bash %}
+```bash
 ldapmodify -Y EXTERNAL -H ldapi:/// -D cn=admin,cn=config -W -f samba_indexes.ldif
-{% endcodeblock %}
+```
 
 20)
 
@@ -342,30 +342,30 @@ Now thanks to the following command, you'll finally understand if everything
 till now went fine. If everything goes fine, it will output a lot of stuff,
 including at the end strings similar to the ones found in step 18
 
-{% codeblock lang:bash %}
+```bash
 ldapsearch -Y EXTERNAL -H ldapi:/// -D cn=admin,cn=config -b cn=config -W olcDatabase={1}hdb
-{% endcodeblock %}
+```
 
 21)
 
 Now that ldap is working perfectly, we must also be sure Samba is working too.
 The following command MUST not give errors, and it must output something similar to this:
 
-{% codeblock lang:bash %}
+```bash
 SID for domain DOMAIN is: S-1-5-21-908678672-1104131578-2020688504
-{% endcodeblock %}
+```
 
 So this is the command to type:
 
-{% codeblock lang:bash %}
+```bash
 net getlocalsid
-{% endcodeblock %}
+```
 
 22)
 
-{% codeblock lang:bash %}
+```bash
 gzip -d /usr/share/doc/smbldap-tools/configure.pl.gz
-{% endcodeblock %}
+```
 
 23)
 
@@ -378,9 +378,9 @@ bind master and then for ldap bind slave. In both cases, you must put the
 exact same password you put in step 6, by default in this guide "pwd123″.
 So now you know what to do, this is the command:
 
-{% codeblock lang:bash %}
+```bash
 perl /usr/share/doc/smbldap-tools/configure.pl
-{% endcodeblock %}
+```
 
 24)
 
@@ -388,17 +388,17 @@ Following command should create some groups, at the end it will ask for a
 password. As always put password provided in step 6, default of this guide is
 "pwd123″.
 
-{% codeblock lang:bash %}
+```bash
 smbldap-populate
-{% endcodeblock %}
+```
 
 25)
-{% codeblock lang:bash %}
+```bash
 /etc/init.d/slapd stop  
 slapindex  
 chown openldap:openldap /var/lib/ldap/*  
 /etc/init.d/slapd start
-{% endcodeblock %}
+```
 
 26)
 
@@ -409,9 +409,9 @@ admin.
 THIS COMMAND MUST NOT GIVE ERRORS, otherwise it means LDAP is not working with
 Samba.
 
-{% codeblock lang:bash %}
+```bash
 smbldap-groupmod -m 'root' 'Administrators'
-{% endcodeblock %}
+```
 
 27)
 
@@ -427,23 +427,23 @@ guide was "pwd123″
 
 The command is:
 
-{% codeblock lang:bash %}
+```bash
 apt-get --yes install ldap-auth-client
-{% endcodeblock %}
+```
 
 IMPORTANT: if you do a mistake, you can reconfigure the previous command
 typing:
 
 
-{% codeblock lang:bash %}
+```bash
 dpkg-reconfigure ldap-auth-config
-{% endcodeblock %}
+```
 
 28)
 
-{% codeblock lang:bash %}
+```bash
 auth-client-config -t nss -p lac_ldap
-{% endcodeblock %}
+```
 
 29)
 
@@ -451,15 +451,15 @@ The following command is used to enable Unix, Ldap and Samba authentication.
 Be sure all of them are selected with "*" character and press Enter.
 The command is:
 
-{% codeblock lang:bash %}
+```bash
 pam-auth-update ldap
-{% endcodeblock %}
+```
 
 30)
 
 The following command should output something similar to this:
 
-{% codeblock lang:bash %}
+```bash
 Domain Admins:*:512:root
 Domain Users:*:513:
 Domain Guests:*:514:
@@ -469,36 +469,36 @@ Account Operators:*:548:
 Print Operators:*:550:
 Backup Operators:*:551:
 Replicators:*:552:
-{% endcodeblock %}
+```
   
 The command is:
 
-{% codeblock lang:bash %}
+```bash
 getent group
-{% endcodeblock %}
+```
 
 31)
-{% codeblock lang:bash %}
+```bash
 reboot
-{% endcodeblock %}
+```
 
 32)
 
 Good, we're done. After reboot, let's check that everything is working by
 creating a user.
 
-{% codeblock lang:bash %}
+```bash
 sudo su
-{% endcodeblock %}
+```
 
 If the following command does not give errors, it means Samba and Ldap are
 both working together, and you should be happy! It will ask for a password,
 the password is the password you want for the user, in this case for user
 "user1″:
 
-{% codeblock lang:bash %}
+```bash
 smbldap-useradd -a -m -P user1
-{% endcodeblock %}
+```
 
 33)
 
@@ -511,12 +511,12 @@ the domain you'll have to put user "root" and its password, let's instead make
 another user which will be part of the Domain Administrators. We'll call the
 user "adminpdc".
 
-{% codeblock lang:bash %}
+```bash
 smbldap-useradd -a -m -P adminpdc  
 smbldap-groupmod -m ' adminpdc' 'Administrators'  
 smbldap-groupmod -m ' adminpdc' 'Domain Admins'  
 sudo auth-client-config -t nss -p lac_ldap
-{% endcodeblock %}
+```
 
 Good, now we have user "adminpdc" that is a Domain Administrator but is in no
 way a possible security danger for your Linux machine, since it's not part of
@@ -540,45 +540,45 @@ To Delete: smbldap-userdel user
 To ChangePassword: smbldap-passwd user
 To add a Domain Administrator:
 
-{% codeblock lang:bash %}
+```bash
 smbldap-groupmod -m 'user' 'Administrators'
 smbldap-groupmod -m 'user' 'Domain Admins'
 auth-client-config -t nss -p lac_ldap
-{% endcodeblock %}
+```
 
 If you ever change the static IP of the PDC:
 
-{% codeblock lang:bash %}
+```bash
 service smbd stop
 rm /var/cache/samba/browse.dat
 rm /var/cache/samba/login_cache.tdb
 rm /var/lib/samba/wins.dat
 reboot
-{% endcodeblock %}
+```
 
 To make Windows 7 join the domain:
 - Check : https://bugzilla.samba.org/attachmen…88&action=view
 
 To make your PDC automatically map net drives:
 
-{% codeblock lang:bash %}
+```bash
 apt-get install flip  
 /var/lib/samba/netlogon/allusers.bat
-{% endcodeblock %}
+```
 
 In this example you'll have a shared folder for all users, of course you can edit /etc/samba/smb.conf to create specific user shares.
 
-{% codeblock lang:bash %}
+```bash
 mkdir -p /var/lib/samba/shared/  
 chmod -R 777 /var/lib/samba/shared/  
 nano /var/lib/samba/netlogon/allusers.bat
-{% endcodeblock %}
+```
 
 NOTE: change "PSAMBA" with the Netbios name set in step 9. Change drive "m:" to any letter you prefer.
 
-{% codeblock lang:bash %}
+```bash
 @echo off
 net use m: /delete
 net use m: "\\PSAMBA\shared"
 > flip -m /var/lib/samba/netlogon/allusers.bat
-{% endcodeblock %}
+```

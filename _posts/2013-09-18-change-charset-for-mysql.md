@@ -14,11 +14,11 @@ tags:
   - sql
 comments: true
 ---
-a quick stored procedure to get rid of the infamous : {% codeblock %}Error Code: 1267. Illegal mix of collations (latin1_general_ci,IMPLICIT) and (latin1_swedish_ci,IMPLICIT) for operation &#8216;=&#8217;{% endcodeblock %}
+a quick stored procedure to get rid of the infamous : {% raw %}Error Code: 1267. Illegal mix of collations (latin1_general_ci,IMPLICIT) and (latin1_swedish_ci,IMPLICIT) for operation &#8216;=&#8217;{% endraw %}
 
 first of all i had to find those tables and databases, and to do so i used the following sql code
 
-{% codeblock lang:mysql %}
+```mysql
 SELECT 
 	table_schema, 
 	TABLE_NAME, 
@@ -35,12 +35,12 @@ ORDER BY
 	table_schema, 
 	TABLE_NAME,
 	ordinal_position 
-{% endcodeblock %}
+```
 
 
 reaplce your\_db\_name with the name od the db you want to change the charset.
 
-{% codeblock lang:mysql %}
+```mysql
 DELIMITER $$
  CREATE PROCEDURE change_charset_and_collation_for_tables()
      BEGIN
@@ -76,5 +76,5 @@ DELIMITER $$
 
         CLOSE cur;
     END $$ 
-{% endcodeblock %}
+```
 

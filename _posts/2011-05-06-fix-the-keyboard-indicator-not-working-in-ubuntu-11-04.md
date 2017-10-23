@@ -12,11 +12,11 @@ comments: true
 in gconf-editor, check **/desktop/gnome/peripherals/keyboard/indicator/showFlags**
 
 install set of flags using 
-{% codeblock lang:bash %}
+```bash
 sudo apt-get install famfamfam-flag-png
-{% endcodeblock%} 
+```
 
 make a softlink: 
-{% codeblock lang:bash %}
+```bash
 ln -s /usr/share/flags/countries/16&#215;11 ~/.icons/flags
-{% endcodeblock%} 
+```

@@ -17,7 +17,7 @@ comments: true
 ---
 there is a strange bug with gnome alsamixer on ubuntu 11.10 using gnome-shell.. 
 the solution is quite simple..
-{% codeblock lang:bash %}
+```bash
 wget http://launchpadlibrarian.net/83939881/gnome-alsamixer_0.9.7%7Ecvs.20060916.ds.1-2.1ubuntu1_amd64.deb
 sudo dpkg -i gnome-alsamixer_0.9.7%7Ecvs.20060916.ds.1-2.1ubuntu1_amd64.deb
-{% endcodeblock %}
+```

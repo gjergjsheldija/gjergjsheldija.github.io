@@ -15,7 +15,7 @@ comments: true
 i was having this really huge oo write doc full of hyperlinks..after some hacking and googling i came out with the follwing code..
 hope it helps
 
-{% codeblock lang:bash %}
+```bash
 Sub Main
 
     Dim oDoc,FandR,oFound
@@ -37,4 +37,4 @@ Sub Main
     Wend 
 
 End Sub
-{% endcodeblock%} 
+```

@@ -15,8 +15,8 @@ the problem is that the TIMEDIFF(expr1,expr2) function returns returns expr1 –
 
 a workaround of this problem is to convert this query to return a string, like :
 
-{% codeblock lang:sql %}
+```mysql
 CONCAT('',TIMEDIFF(expr1,expr2))
-{% endcodeblock%} 
+```
 
 then the returned value will be a string instead of a time value and JDBC will not parse it.

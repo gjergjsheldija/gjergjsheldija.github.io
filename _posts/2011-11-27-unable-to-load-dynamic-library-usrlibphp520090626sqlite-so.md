@@ -18,6 +18,6 @@ PHP Warning: PHP Startup: Unable to load dynamic library /usr/lib/php5/20090626/
 This has occurred because sqlite support was removed, in favour of pure sqlite3. It seems that a config file was left in place. 
 to fix it, just :
 
-{% codeblock lang:bash %}
+```bash
 sudo rm /etc/php5/conf.d/sqlite.ini
-{% endcodeblock %}
+```

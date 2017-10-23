@@ -34,6 +34,7 @@ title: "{ Gjergj Sheldija }"
 description: "Blog and website of Gjergj Sheldija, blogging mainly for tech. Opinions expressed are mine."
 keywords: "gjergj, sheldija, care2x, his, hospital, gnu, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
+highlighter: rouge
 
 ################
 # Header layout #
@@ -217,5 +218,4 @@ sass:
 gems:
   - jekyll-paginate
   - jemoji
-  - octopress-codeblock
-
+  - rouge
