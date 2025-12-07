@@ -57,11 +57,11 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
-          FORMSPREE_ENDPOINT: ${{ secrets.FORMSPREE_ENDPOINT }}
         run: |
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+          cp -r api public/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

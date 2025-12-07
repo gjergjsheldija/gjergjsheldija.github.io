@@ -15,8 +15,7 @@ export default function handler(req, res) {
   // Return the configuration with environment variables
   // These are only accessible server-side, never exposed to the client
   const config = {
-    pexelsApiKey: process.env.PEXELS_API_KEY || null,
-    formspreeEndpoint: process.env.FORMSPREE_ENDPOINT || null,
+    pexelsApiKey: process.env.PEXELS_API_KEY || null
     // Add any other sensitive configuration here
   };
 
