@@ -1,0 +1,23 @@
+- title: "The MDR/FHIR Audit"
+  price: "€4,500"
+  period: "Fixed Price"
+  description: "A 48-hour architectural review to identify compliance gaps (GDPR, MDR, ISO 62304) before the auditors do."
+  cta: "Book Audit"
+  link: "https://calendly.com/your-link/audit"
+  highlight: false
+
+- title: "The Integration Blueprint"
+  price: "€15,000"
+  period: "Fixed Price"
+  description: "I design the complete FHIR/HL7 interoperability layer and API specs for your team to build correctly the first time."
+  cta: "Get Blueprint"
+  link: "https://calendly.com/your-link/blueprint"
+  highlight: true
+
+- title: "Fractional Principal"
+  price: "€6,000"
+  period: "Per Month"
+  description: "I join your team 10h/week to steer technical strategy, review critical PRs, and mentor your lead engineers."
+  cta: "Inquire"
+  link: "mailto:gjergj@sheldija.net"
+  highlight: false

@@ -1,0 +1,32 @@
+- title: "The MDR/FHIR Audit"
+  price: "€4,500 (Fixed)"
+  description: "A 2-day architectural review to identify compliance gaps before the auditors do."
+  features:
+    - "Data Model Analysis"
+    - "GDPR Log Check"
+    - "Remediation Roadmap"
+  cta: "Book Audit"
+  link: "https://calendly.com/gjergj-sheldija/audit"
+  highlight: false
+
+- title: "The Integration Blueprint"
+  price: "€15,000 (Fixed)"
+  description: "Complete architectural roadmap and API specs for FHIR/HL7 integration."
+  features:
+    - "API Specification"
+    - "K8s Infrastructure Design"
+    - "HL7 Mapping"
+  cta: "Get Blueprint"
+  link: "https://calendly.com/gjergj-sheldija/blueprint"
+  highlight: true
+
+- title: "Principal on Retainer"
+  price: "€6,000 / month"
+  description: "Fractional leadership to steer technical strategy and mentor teams."
+  features:
+    - "10h/week Availability"
+    - "PR Reviews"
+    - "Strategy Calls"
+  cta: "Inquire"
+  link: "mailto:gjergj@sheldija.net"
+  highlight: false

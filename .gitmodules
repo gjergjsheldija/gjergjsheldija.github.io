@@ -1,0 +1,3 @@
+[submodule "themes/careercanvas"]
+	path = themes/careercanvas
+	url = git@github.com:gjergjsheldija/website-theme.git
