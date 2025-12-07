@@ -47,7 +47,7 @@ github_text = "github.com/gjergjsheldija"
 
 copyright = "© 2025 | Gjergj Sheldija"  
 
-resume_url_en = "/files/Felipe_Cordero_CV_English_version.pdf"
+resume_url = "/files/gjergj.sheldija.resume.pdf"
 resume_label = "View CV"
 
 [[params.social]]

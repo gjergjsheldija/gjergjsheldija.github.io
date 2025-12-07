@@ -3,8 +3,10 @@ todo
 
 [x] header name
 [x] top menu
-[ ] pictures
-[ ] experiences
-[ ] work selection
+[x] pictures
+[x] experiences
+[x] work selection
 [ ] mdr pdf
-[ ] calendly link
+[x] calendly link
+[x] fix blog
+[ ] fix pexels

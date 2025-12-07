@@ -5,8 +5,6 @@
 # 
 # To set up locally, create config.local.toml with:
 pexels_api_key = "EsuUjDXIjdhhWVVC97kK8TI00bvMG2HlTbqcZ7lqTNBHtMrS2T9vrQRu"
-#   formspree_endpoint = "https://formspree.io/f/your_endpoint_here"
 #
 # For production deployment, add these as GitHub Secrets:
 # - PEXELS_API_KEY: Your Pexels API key
-# - FORMSPREE_ENDPOINT: Your Formspree endpoint URL

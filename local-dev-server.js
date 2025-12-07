@@ -10,8 +10,7 @@ const path = require('path');
 // Read config from config.local.toml
 const configPath = path.join(__dirname, 'config.local.toml');
 let config = {
-  pexelsApiKey: null,
-  formspreeEndpoint: null
+  pexelsApiKey: null
 };
 
 try {
@@ -19,11 +18,9 @@ try {
   
   // Simple TOML parsing for our specific config
   const pexelsMatch = configContent.match(/pexels_api_key\s*=\s*"([^"]+)"/);
-  const formspreeMatch = configContent.match(/formspree_endpoint\s*=\s*"([^"]+)"/);
-  
+    
   if (pexelsMatch) config.pexelsApiKey = pexelsMatch[1];
-  if (formspreeMatch) config.formspreeEndpoint = formspreeMatch[1];
-  
+    
   console.log('✅ Loaded config from config.local.toml');
 } catch (error) {
   console.warn('⚠️ Could not read config.local.toml:', error.message);

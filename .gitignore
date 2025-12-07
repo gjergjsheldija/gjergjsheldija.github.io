@@ -22,3 +22,4 @@ node_modules
 Gemfile.lock
 public/
 resources/
+.env

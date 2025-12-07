@@ -4,7 +4,6 @@
 
 echo "Building Hugo site..."
 echo "PEXELS_API_KEY is set: ${PEXELS_API_KEY:+YES}"
-echo "FORMSPREE_ENDPOINT is set: ${FORMSPREE_ENDPOINT:+YES}"
 
 # Run Hugo build
 hugo --minify
