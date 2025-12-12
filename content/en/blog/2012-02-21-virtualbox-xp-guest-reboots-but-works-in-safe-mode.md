@@ -10,6 +10,5 @@ tags:
   - reboot
   - virtualbox
   - xp
-comments: true
 ---
 just change the 'Start' value of reg HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\intelppm start to 4

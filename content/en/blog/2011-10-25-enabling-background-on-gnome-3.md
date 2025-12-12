@@ -11,7 +11,6 @@ tags:
   - gnome 3
   - linux
   - ubuntu 11.10
-comments: true
 ---
 having some problems with changing the background on gnome 3 after playing a bit with themes.
 luckily the solution was quite simple 

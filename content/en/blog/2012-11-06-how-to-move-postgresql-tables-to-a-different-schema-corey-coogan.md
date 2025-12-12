@@ -7,7 +7,6 @@ categories:
   - code
 tags:
   - postgres
-comments: true
 ---
 [How to Move PostgreSql Tables to a Different Schema « Corey Coogan][1].
 

@@ -9,7 +9,6 @@ categories:
 tags:
   - birt
   - datepicker
-comments: true
 ---
 birt is a really nice tool and the webviewer is great. it lacks a a very simple feature thou, the datepicker when entering parameters.. 
 implementing it was a very straightforward process. 

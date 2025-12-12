@@ -9,7 +9,6 @@ tags:
   - eclipse
   - mylyn
   - redmine
-comments: true
 ---
 eclipse mylyn has a nice connector for redmine. so, if you use both you should give it a try.  
 the installation is quite simple.

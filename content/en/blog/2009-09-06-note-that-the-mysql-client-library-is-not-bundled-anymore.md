@@ -9,7 +9,6 @@ tags:
   - client
   - library
   - mysql
-comments: true
 ---
 Unable to get PHP configured to my specifications using the Ubuntu repositories, I decided to install it from source. However, I kept getting the error:
 

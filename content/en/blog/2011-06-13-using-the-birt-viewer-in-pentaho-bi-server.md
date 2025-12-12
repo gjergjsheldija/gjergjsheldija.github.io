@@ -11,7 +11,6 @@ tags:
   - java
   - pentaho
   - pentaho 3.6
-comments: true
 ---
 the last pentaho bi server v 3.7  has some problems handling birt reports due to old libraries shipped with pentaho. the process of updating is which can be found on the pentaho wiki didn&#8217;t work for me, i was not able to even list the birt reports. after some googling and hacking around i was able to bypass it and use the birt webviewer inside pentaho. since it took me some time to make it work i thought that it might nor be a bad idea to document what i did.  
 download birt runtime from [birt runtime]<http://download.eclipse.org/birt/downloads> and extract it somewhere in a temporary directory. copy the WebViewerExample directory in : **/opt/pentaho-3.6/biserver-ce/tomcat/webapps**

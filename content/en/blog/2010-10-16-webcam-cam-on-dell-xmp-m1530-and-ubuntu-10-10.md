@@ -11,7 +11,6 @@ tags:
   - dell m1530
   - ubuntu 10.10
   - webcam
-comments: true
 ---
 quick fix how to enable the integrated webcam on a dell xps m1530 on ubuntu 10.10 to work with skype and ekiga. first do a
 

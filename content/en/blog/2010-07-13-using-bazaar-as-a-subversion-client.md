@@ -15,7 +15,6 @@ tags:
   - guide
   - subversion
   - svn
-comments: true
 ---
 a quick sample based guide on using bazaar as a svn client..
 

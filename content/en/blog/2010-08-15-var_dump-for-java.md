@@ -10,7 +10,6 @@ categories:
 tags:
   - java
   - var_dump
-comments: true
 ---
 quick tip for java,
 

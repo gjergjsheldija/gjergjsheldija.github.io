@@ -10,7 +10,6 @@ tags:
   - datetime diff
   - 'php #6015'
   - php 5.3
-comments: true
 ---
 the following code :
 

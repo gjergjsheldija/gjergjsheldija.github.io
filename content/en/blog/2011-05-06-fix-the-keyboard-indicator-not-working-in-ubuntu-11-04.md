@@ -7,7 +7,6 @@ categories:
   - ubuntu
 tags:
   - ubuntu keyboard gnome Natty Narwhal
-comments: true
 ---
 in gconf-editor, check **/desktop/gnome/peripherals/keyboard/indicator/showFlags**
 

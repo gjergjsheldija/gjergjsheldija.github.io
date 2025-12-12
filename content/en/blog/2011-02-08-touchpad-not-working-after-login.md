@@ -10,7 +10,6 @@ tags:
   - login
   - touchpad
   - ubuntu
-comments: true
 ---
 usually happens when you disable your touchpad and then suspend your computer. to fix this just run this command:
 

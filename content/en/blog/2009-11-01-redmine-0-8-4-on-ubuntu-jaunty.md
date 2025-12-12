@@ -10,7 +10,6 @@ tags:
   - rails
   - redmine
   - ubuntu
-comments: true
 ---
 this is a quick guide based on [this][1], it only differs on some small apache configs and rails stuff, so i&#8217;m gonna write only the different steps
 

@@ -12,7 +12,6 @@ tags:
   - deploy
   - migrate
   - phing
-comments: true
 ---
 working on a project hosted on a shared hosting, with limited resources, i had to find a way to update my working copy with the testing and the production server..and after some tinkering this is the result. hope it's usefull
 

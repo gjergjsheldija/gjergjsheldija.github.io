@@ -7,7 +7,6 @@ categories:
   - random
 tags:
   - hacks
-comments: true
 ---
 just paste this code into the address bar :
 

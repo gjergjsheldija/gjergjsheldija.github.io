@@ -11,7 +11,6 @@ tags:
   - kiosk
   - linux
   - ubuntu
-comments: true
 ---
 first download the base from here [Ubuntu Kiosk](http://jacob.steelsmith.org/content/ubuntu-kiosk-based-10041)
 second replace firefox and it's plugin with [Firefox PLugins](https://mozdevgroup.com/products/openkioskdistro.html)

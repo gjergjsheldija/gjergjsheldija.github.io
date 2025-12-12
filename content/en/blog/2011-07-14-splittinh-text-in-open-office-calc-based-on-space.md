@@ -9,7 +9,6 @@ categories:
 tags:
   - calc
   - openoffice
-comments: true
 ---
 paste them in different columns
 

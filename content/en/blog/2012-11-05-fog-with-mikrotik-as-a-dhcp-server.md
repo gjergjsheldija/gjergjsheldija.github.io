@@ -12,7 +12,6 @@ tags:
   - mikrotik
   - mikrotik 3.22
   - tftp
-comments: true
 ---
 having mikrotik 3.x give the correct tftp ip to the client can be a bit of a pain.
 after some hacking, googling and good luck, finally was able to do it.

@@ -12,7 +12,6 @@ tags:
   - latin1_swedish_ci
   - mysql
   - sql
-comments: true
 ---
 a quick stored procedure to get rid of the infamous : {% raw %}Error Code: 1267. Illegal mix of collations (latin1_general_ci,IMPLICIT) and (latin1_swedish_ci,IMPLICIT) for operation &#8216;=&#8217;{% endraw %}
 

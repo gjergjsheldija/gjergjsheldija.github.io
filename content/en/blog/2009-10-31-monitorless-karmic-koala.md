@@ -9,7 +9,6 @@ tags:
   - karmic
   - koala
   - ubuntu
-comments: true
 ---
 karmic koala and intel i915 chipset don&#8217;t go much well together on monitorless pc&#8217;s, apparently because of this : [431812 ][1]  
 besides that, the computer just hangs in an endless loops trying to detect the non present monitor.  

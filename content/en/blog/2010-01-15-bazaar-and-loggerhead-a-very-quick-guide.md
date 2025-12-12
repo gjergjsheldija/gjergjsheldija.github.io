@@ -10,8 +10,8 @@ tags:
   - bazaar
   - loggerhead
   - ubuntu
-comments: true
 ---
+
 ### bazaar
 
 first add the bazaar PPA to the repository list

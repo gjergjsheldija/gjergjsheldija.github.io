@@ -9,7 +9,6 @@ categories:
 tags:
   - mysql
   - sql
-comments: true
 ---
 sometimes even the simples of the things becomes..hard.  
 one of those things is updating multimple columns in mysql.  

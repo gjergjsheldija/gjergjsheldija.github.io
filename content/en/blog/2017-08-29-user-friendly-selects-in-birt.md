@@ -17,7 +17,6 @@ tags:
   - javascript
   - jquery
   - chosen
-comments: true
 ---    
 a very straightforward post on how to add the chosen plugin to select boxes in birt.
 first download the chosen plugin from https://harvesthq.github.io/chosen/ and extract the files in webcontent/birt/js.

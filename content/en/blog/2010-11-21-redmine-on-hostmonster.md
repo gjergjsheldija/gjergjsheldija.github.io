@@ -9,7 +9,6 @@ categories:
 tags:
   - hostmonster
   - redmine
-comments: true
 ---
 i had the need time ago to install redmine on my hostmonster account, after some struggling, trial and error, this is the procedure i followed. ymmv.
 

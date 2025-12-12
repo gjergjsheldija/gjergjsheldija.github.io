@@ -12,7 +12,6 @@ tags:
   - oracle
   - sun
   - ubuntu 10.10
-comments: true
 ---
 ```bash
 sudo add-apt-repository “deb http://archive.canonical.com/ lucid partner”

@@ -9,7 +9,6 @@ tags:
   - aria
   - download
   - rapidshare
-comments: true
 ---
 supposing you&#8217;ve saved all your rapidshare links in a file called links.txt the command line is :
 
