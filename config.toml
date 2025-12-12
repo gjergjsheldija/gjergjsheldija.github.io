@@ -22,7 +22,7 @@ profile_image = "/images/gjergj-sheldija.jpeg"
 hero_description = "Bridging the gap between Cloud Native Engineering and Healthcare Regulation. Software Architect helping HealthTechs pass MDR audits and integrate with Hospital IT systems."
 author = "Gjergj Sheldija"
 hero_location = "Leipzig, Germany"
-tagline = "Architect. Coder. Problem Solver."
+tagline = "Interoperability Architect. Coder. Problem Solver."
 collab_tags = [
     "HealthTech Architecture",
     "Healthcare Interoperability",
