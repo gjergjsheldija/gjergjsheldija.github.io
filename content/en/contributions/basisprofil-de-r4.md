@@ -1,6 +1,6 @@
 ---
 title: FHIR Basisprofil R4
-date: 2025-05-18
+date: 2025-01-01
 draft: false
 description: "German FHIR Basis Profile for R4."
 featured_image: "/images/fhir.png"
