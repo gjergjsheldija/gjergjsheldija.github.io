@@ -1,6 +1,6 @@
 ---
 title: Note that the MySQL client library is not bundled anymore!
-author: admin
+author: gjergj.sheldija
 layout: post
 permalink: /note-that-the-mysql-client-library-is-not-bundled-anymore/
 categories:

@@ -1,6 +1,6 @@
 ---
 title: Distributing PHP-GTK Applications on Windows
-author: admin
+author: gjergj.sheldija
 layout: post
 permalink: /distributing-php-gtk-applications-on-windows/
 categories:

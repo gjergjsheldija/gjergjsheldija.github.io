@@ -38,14 +38,14 @@ collab_tags = [
 
 og_image = "images/gjergj-sheldija.jpeg"
 
-description = "Structural engineer and software developer expanding into AI/ML to solve complex engineering and automation challenges."
+description = "Interoperatbility architect expanding into AI/ML to solve complex healthcare challenges."
 
 linkedin_url = "https://www.linkedin.com/in/gjergjsheldija/"
 linkedin_text = "linkedin.com/in/gjergjsheldija"
 github_url = "https://github.com/gjergjsheldija"
 github_text = "github.com/gjergjsheldija"
 
-copyright = "© 2025 | Gjergj Sheldija"  
+copyright = "© 2026 | Gjergj Sheldija"  
 
 resume_url = "/files/gjergj.sheldija.resume.pdf"
 resume_label = "View CV"
