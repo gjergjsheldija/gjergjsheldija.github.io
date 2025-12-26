@@ -1,6 +1,6 @@
 ---
 title: Care2x
-date: 2025-05-18
+date: 2025-02-01
 draft: false
 description: "Open source Hospital Information System."
 featured_image: "/images/c2xnewlogo.png"

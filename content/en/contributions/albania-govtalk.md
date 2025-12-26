@@ -1,6 +1,6 @@
 ---
 title: Albania GovTalk - Open Source e-Government Platform
-date: 2025-05-18
+date: 2024-05-18
 draft: false
 description: "Open source librayies and tools for building e-Government platforms in Albania."
 featured_image: "/images/govtalk-logo.png"

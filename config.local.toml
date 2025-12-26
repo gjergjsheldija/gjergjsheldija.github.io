@@ -1,10 +1,10 @@
-[params]
+[params.pexels]
 # Contact Form Configuration
 # For security, sensitive endpoints are moved to config.local.toml
 # In production, these are injected via environment variables in GitHub Actions
 # 
 # To set up locally, create config.local.toml with:
-pexels_api_key = "EsuUjDXIjdhhWVVC97kK8TI00bvMG2HlTbqcZ7lqTNBHtMrS2T9vrQRu"
+api_key = "EsuUjDXIjdhhWVVC97kK8TI00bvMG2HlTbqcZ7lqTNBHtMrS2T9vrQRu"
 #
 # For production deployment, add these as GitHub Secrets:
 # - PEXELS_API_KEY: Your Pexels API key
