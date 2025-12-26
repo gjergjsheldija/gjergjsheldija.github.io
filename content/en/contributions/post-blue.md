@@ -1,6 +1,6 @@
 ---
 title: POS Blue
-date: 2025-05-18
+date: 2021-05-18
 draft: false
 description: "Open source point for sale for simple stores."
 featured_image: "/images/pos-blue.png"

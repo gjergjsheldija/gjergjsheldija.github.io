@@ -1,6 +1,6 @@
 ---
 title: Xk6-MLLP - MLLP Extension for xk6
-date: 2025-05-18
+date: 2025-06-01
 draft: false
 description: "Open source plugin that adds MLLP support to the xk6 load testing tool."
 featured_image: "/images/k6.webp"

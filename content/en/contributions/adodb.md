@@ -1,6 +1,6 @@
 ---
 title: ADOdb - Database Abstraction Layer for PHP
-date: 2025-05-18
+date: 2021-05-18
 draft: false
 description: "Open source PHP data abstraction layer."
 featured_image: "/images/adodb-logo.png"

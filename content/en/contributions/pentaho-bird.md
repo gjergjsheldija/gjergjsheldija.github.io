@@ -1,6 +1,6 @@
 ---
 title: Penatho Birt plugin
-date: 2025-05-18
+date: 2024-05-18
 draft: false
 description: Penatho Birt plugin for generating reports."
 featured_image: "/images/BIRT-Logo.png"

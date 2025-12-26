@@ -1,6 +1,6 @@
 ---
 title: POS Red
-date: 2025-05-18
+date: 2021-05-18
 draft: false
 description: "Open source point for sale for restaurants."
 featured_image: "/images/pos-red.png"

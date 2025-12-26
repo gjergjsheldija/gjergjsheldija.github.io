@@ -1,6 +1,6 @@
 ---
 title: Smart Resturant
-date: 2025-05-18
+date: 2021-05-18
 draft: false
 description: "Open source Restaurant Management System."
 featured_image: "/images/smart-restaurant.png"

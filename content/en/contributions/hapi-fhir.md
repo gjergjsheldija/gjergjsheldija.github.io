@@ -1,6 +1,6 @@
 ---
 title: HAPI FHIR
-date: 2025-05-18
+date: 2025-03-01
 draft: false
 description: "HAPI FHIR is a Java-based implementation of the HL7 FHIR (Fast Healthcare Interoperability Resources) standard for healthcare data exchange."
 featured_image: "/images/hapi-fhir.png"
