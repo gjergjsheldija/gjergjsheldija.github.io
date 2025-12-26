@@ -93,11 +93,11 @@ sectionPagesMenu = 'main'
     second_color = "#E52521"  # Mario Red – subtle accent, inspired by Super Mario
     third_color = "#3CB043"   # Luigi Green – subtle accent, inspired by Luigi
   
-  [[params.color_palettes.palette]]
-    name = "ocean"
-    main_color = "#1E40AF"    # Vibrant Blue – energetic and modern
-    second_color = "#06B6D4"  # Cyan – fresh and innovative
-    third_color = "#10B981"   # Emerald – growth and success
+  # [[params.color_palettes.palette]]
+  #   name = "ocean"
+  #   main_color = "#1E40AF"    # Vibrant Blue – energetic and modern
+  #   second_color = "#06B6D4"  # Cyan – fresh and innovative
+  #   third_color = "#10B981"   # Emerald – growth and success
   
   # [[params.color_palettes.palette]]
   #   name = "sunset"
@@ -123,11 +123,11 @@ sectionPagesMenu = 'main'
     second_color = "#6B7280"  # Medium Gray – balanced and professional
     third_color = "#10B981"   # Emerald – success and precision
   
-  [[params.color_palettes.palette]]
-    name = "navy"
-    main_color = "#1E3A8A"    # Navy Blue – authoritative and trustworthy
-    second_color = "#3B82F6"  # Bright Blue – innovation and clarity
-    third_color = "#F59E0B"   # Amber – excellence and achievement
+  # [[params.color_palettes.palette]]
+  #   name = "navy"
+  #   main_color = "#1E3A8A"    # Navy Blue – authoritative and trustworthy
+  #   second_color = "#3B82F6"  # Bright Blue – innovation and clarity
+  #   third_color = "#F59E0B"   # Amber – excellence and achievement
   
   [[params.color_palettes.palette]]
     name = "charcoal"
