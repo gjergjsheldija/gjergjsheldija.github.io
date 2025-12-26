@@ -11,7 +11,6 @@ tags:
   - css
   - error
   - html
-comments: true
 ---
 [Holmes &#8211; CSS based error detection, watson. &#8211; The Changelog &#8211; Open Source moves fast. Keep up.][1].
 

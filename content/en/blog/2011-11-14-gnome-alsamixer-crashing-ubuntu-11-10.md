@@ -13,7 +13,6 @@ tags:
   - gnome-shell
   - libgtk-x11-2.0.so.0
   - ubuntu 11.10
-comments: true
 ---
 there is a strange bug with gnome alsamixer on ubuntu 11.10 using gnome-shell.. 
 the solution is quite simple..

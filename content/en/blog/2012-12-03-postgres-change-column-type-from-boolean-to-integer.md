@@ -8,7 +8,6 @@ categories:
 tags:
   - database
   - postgres
-comments: true
 ---
 postgres change column type from boolean to integer
 

@@ -37,7 +37,6 @@ quickfacts:
 ---
 
 
-
 ### My Philosophy: "Compliance as Code"
 
 Many developers fear regulation. They see HL7 standards, GDPR, and MDR as roadblocks. I see them as architecture constraints that, when handled correctly, create robust, unshakeable systems.

@@ -10,7 +10,6 @@ categories:
 tags:
   - hostmonster
   - mercurial
-comments: true
 ---
 this i quick guide on how to install mercurial on hostmonster. it's made of pieces taken from the net plus some trial and error.
 

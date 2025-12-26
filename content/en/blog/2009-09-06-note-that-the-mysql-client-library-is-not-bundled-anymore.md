@@ -1,6 +1,6 @@
 ---
 title: Note that the MySQL client library is not bundled anymore!
-author: admin
+author: gjergj.sheldija
 layout: post
 permalink: /note-that-the-mysql-client-library-is-not-bundled-anymore/
 categories:
@@ -9,7 +9,6 @@ tags:
   - client
   - library
   - mysql
-comments: true
 ---
 Unable to get PHP configured to my specifications using the Ubuntu repositories, I decided to install it from source. However, I kept getting the error:
 

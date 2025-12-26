@@ -10,7 +10,6 @@ categories:
   - ubuntu
 tags:
   - php sqlite error 20090626 sqlite.so
-comments: true
 ---
 if you happen to have this error with php 5 on ubuntu 11.10
 

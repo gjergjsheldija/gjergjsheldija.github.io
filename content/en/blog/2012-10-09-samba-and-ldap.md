@@ -11,7 +11,6 @@ tags:
   - network
   - samba
   - ubutu
-comments: true
 ---
 
 _i found this online, and forgot the url where i copied it. so if you are the

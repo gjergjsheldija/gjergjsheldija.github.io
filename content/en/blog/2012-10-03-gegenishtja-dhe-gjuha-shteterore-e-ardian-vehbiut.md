@@ -5,7 +5,6 @@ layout: post
 permalink: /gegenishtja-dhe-gjuha-shteterore-e-ardian-vehbiut/
 categories:
   - random
-comments: true
 ---
 [MAPO][1].
 

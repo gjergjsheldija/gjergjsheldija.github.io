@@ -13,7 +13,6 @@ tags:
   - php
   - utf-8
   - utf8
-comments: true
 ---
 quick guide on how to use utf-8 encoding with php and mysql.
 first check that character set is set to utf-8 and that collation is set to utf8\_general\_ci.

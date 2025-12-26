@@ -10,7 +10,6 @@ categories:
 tags:
   - 4.2
   - virtual box
-comments: true
 ---
 [Install VirtualBox 4.2.2 in Ubuntu 12.10 (Quantal Quetzal) | Liberian Geek][1].
 

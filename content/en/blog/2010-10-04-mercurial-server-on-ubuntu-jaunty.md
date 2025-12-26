@@ -12,7 +12,6 @@ tags:
   - mercurial
   - server
   - ubuntu
-comments: true
 ---
 this is a short howto on how to install a mercurial server on a ubuntu jaunty and maybe lynx.
 

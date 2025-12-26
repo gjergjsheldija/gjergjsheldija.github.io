@@ -10,7 +10,6 @@ tags:
   - bazaar
   - bzr
   - svn
-comments: true
 ---
 If you try to push changes from your Bazaar feature branch back to a Subversion repository, and the Subversion repository has been changed since you created your Bazaar branch, you may get something like this:
 

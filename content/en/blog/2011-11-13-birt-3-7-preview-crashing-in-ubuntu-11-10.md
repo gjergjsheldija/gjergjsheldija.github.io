@@ -11,7 +11,6 @@ tags:
   - birt
   - java
   - ubuntu
-comments: true
 ---
 if you have problems with birt 3.7 preview crashing and recieve this sort of output on ubuntu 11.10 :
 

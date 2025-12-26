@@ -12,7 +12,6 @@ tags:
   - firefox
   - java
   - ubuntu
-comments: true
 ---
 ubuntu comes with icedtea / openjdk as the default java vm. this crewates some errors loading certain applets. the simple solution to fix that is to remove the icedtea plugin package and install the sun plugin package :
 

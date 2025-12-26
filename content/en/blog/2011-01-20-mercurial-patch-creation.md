@@ -9,7 +9,6 @@ categories:
   - ubuntu
 tags:
   - mercurial patch diff generation
-comments: true
 ---
 some days ago i had the need to generate a patch for a project i had on hosted on mercurial. the problem was that the user that would do the update was not able to apply a diff patch, nor wanted to know about it. the ideal solution for him was to just send him a zipped file for him to extract and copy paste over the existing files. 
 after some long searches on google i wasn&#8217;t able to find anything..so, armed with my bash newbie skills i came up with the following code

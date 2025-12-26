@@ -11,7 +11,6 @@ tags:
   - localhost
   - login
   - magento 1.4
-comments: true
 ---
 magento 1.4.x stable has a problem on the login procedure on localhost.  
 you need to change in app/code/core/Mage/Core/Model/Session/Abstract/Varien.php

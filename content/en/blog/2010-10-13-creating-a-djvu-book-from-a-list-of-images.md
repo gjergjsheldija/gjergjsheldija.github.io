@@ -11,7 +11,6 @@ tags:
   - img
   - script
   - ubuntu
-comments: true
 ---
 i had the need to convert some images ( 2600 ) separated into folder into books. each one titled as the containing folder.
 

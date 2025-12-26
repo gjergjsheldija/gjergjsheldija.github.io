@@ -10,7 +10,6 @@ categories:
   - ubuntu
 tags:
   - linux fun
-comments: true
 ---
 ASCIIQuarium is an aquarium/sea animation in ASCII art created using perl. to install it just follow those steps :
 

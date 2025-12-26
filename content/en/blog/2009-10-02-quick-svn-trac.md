@@ -11,7 +11,6 @@ tags:
   - svn
   - trac
   - ubuntu
-comments: true
 ---
 ```bash
 svn import -m "First import to SVN" /import/from/here/project file:///var/svn/repos/project/trunk

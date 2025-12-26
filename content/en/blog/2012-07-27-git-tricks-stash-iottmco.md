@@ -8,7 +8,6 @@ categories:
 tags:
   - git
   - stash
-comments: true
 ---
 [Git tricks: stash :: IOTTMCO][1].
 
