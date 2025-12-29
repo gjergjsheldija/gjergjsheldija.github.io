@@ -8,10 +8,4 @@ echo "PEXELS_API_KEY is set: ${PEXELS_API_KEY:+YES}"
 # Run Hugo build
 hugo --minify
 
-# Ensure API directory is copied to public (for serverless functions)
-if [ -d "api" ]; then
-    echo "Copying API directory to public..."
-    cp -r api public/
-fi
-
 echo "Build completed!"
