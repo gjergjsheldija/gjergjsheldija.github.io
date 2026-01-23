@@ -1,5 +1,5 @@
 ---
-title: "Testing Mirth Connect: Introducing Mirth Tools for Clinical Data Workflows
+title: "Testing Mirth Connect: Introducing Mirth Tools for Clinical Data Workflows"
 date: 2026-01-23
 draft: false
 description: "Testing and validation in Mirth."
