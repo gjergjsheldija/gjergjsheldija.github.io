@@ -3,66 +3,60 @@ title: "About"
 type: "homepage"
 featured_image: "/images/gjergj-sheldija.jpeg"
 intro: >-
-  Hi! I’m Gjergj Sheldija, a Principal Software Architect 🏗️ and Interoperability Expert 💻 with 20+ years in HealthTech, now focused on bridging the gap between Cloud Native Engineering and Medical Regulation 🏥.<br/>  
-  My journey started with Open Source. Years ago, I contributed to projects like Care2x, one of the first open-source Hospital Information Systems. That experience taught me a fundamental truth: **Healthcare software is useless if it stands alone.**<br/>  
-  Over the last 20 years, I have evolved from writing code to orchestrating national-scale digital ecosystems.
+  With over 20 years of leadership in HealthTech, I have evolved from building the core infrastructure of hospital systems to defining the technical strategy for national-scale digital ecosystems. My focus is on transforming technology from a cost center into a predictable, scalable driver of enterprise value. I view regulatory compliance not as a constraint, but as a strategic moat that protects and accelerates business growth.
 
-passion_title: "What I'm passionate about"
+passion_title: "Strategic Focus"
 passion_text: >-
-  I'm passionate about **solving the interoperability crisis** in digital health 💊. At <a href="https://www.raylytic.com" target="_blank" rel="noopener noreferrer"><strong>Raylytic</strong></a>, I architected the **AIQNET ecosystem**, enabling **privacy-preserving AI** on clinical data while ensuring strict **MDR compliance** 🛡️. Previously at <a href="https://www.unicef.org" target="_blank" rel="noopener noreferrer"><strong>UNICEF</strong></a>, I led the **national digitization** of birth records across maternity hospitals in Albania 👶. My goal is to create **secure digital health ecosystems** that save lives by making data accessible and compliant.
+  I am driven by the challenge of scaling complex technical organizations in highly regulated environments. At Raylytic, I led the architectural strategy for the AIQNET ecosystem, proving that privacy-preserving AI can thrive under strict MDR compliance. My experience spans from leading national digitization initiatives with UNICEF to scaling high-traffic commercial platforms. I bridge the gap between engineering teams, board-level stakeholders, and regulatory bodies to deliver secure, life-saving technology at scale.
   
 mix: >-
-  With **20+ years** in HealthTech 🏥 and **Cloud Engineering** ☁️, I bring a **unique perspective** to regulated software. I've led international teams in building everything from **national eHealth registries** to **high-traffic commercial platforms** (Trivago), always focusing on **security, compliance, and scalability** ⚡. My **polyglot background** drives me to bridge the gap between technical teams, legal counsel, and medical stakeholders.
+  My career is defined by building high-performing international teams and navigating the intersection of modern engineering and rigid regulatory frameworks. Whether optimizing cloud infrastructure to reduce spend by 35% or accelerating product launches by automating compliance workflows, my goal is always to deliver measurable business outcomes. I lead by fostering a culture of technical excellence and strategic alignment.
 
 personal: >-
-  Outside work, I am deeply involved in the **Open Source community** 🌐, having contributed to projects like **Care2x** and **HAPI FHIR server**. I enjoy **mentoring developers** 👨‍🏫, exploring new **HealthTech standards**, and navigating the complexities of **European data privacy laws** 🇪🇺.
+  I am a polyglot in both code and life, speaking four languages and leading teams across diverse cultures. I am deeply involved in the open-source community, where I contribute to global standards that drive the future of digital health. My leadership is grounded in the belief that the best technology is that which solves real-world human problems securely and at scale.
 
 quickfacts:
   - icon: "briefcase"
-    title: "Current Role"
-    value: "🏗️ Principal Software Architect at <a href=\"https://www.raylytic.com\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Raylytic</strong></a>"
-  - icon: "toolbox"
-    title: "Toolkit"
+    title: "Engineering Leadership"
+    value: "Directing technical strategy and cross-functional teams in high-stakes HealthTech environments."
+  - icon: "chart-line"
+    title: "Business Impact"
     value: |
-      While I believe architecture transcends tools, I am currently most   effective with:
-      * **Languages:** Go (Golang), Java, Python, PHP.<br/>
-      * **Infrastructure:** Kubernetes, Cloud Native patterns, Docker.<br/>
-      * **The "Hard Stuff":** FHIR, HL7 v2/v3, DICOM, IHE Profiles.
-  - icon: "star"
-    title: "Clients"
+      * **Cost Optimization:** Reduced cloud infrastructure spend by 35% while increasing reliability.<br/>
+      * **Time-to-Market:** Accelerated product launches by reducing deployment cycles from days to hours.<br/>
+      * **Risk Management:** Led organizations through complex MDR and ISO 13485 certifications.
+  - icon: "globe"
+    title: "Global Scale"
     value: |
-      -  **UNICEF**: Led the architectural design to digitize birth records across an entire nation, connecting maternity hospitals to central government registries.
-      - **Raylytic**: Architected the AIQNET ecosystem, proving that AI and clinical data can coexist under strict MDR compliance.      
-      - **Trivago**: Engineered high-traffic backend services that handle millions of requests, learning what true "web scale" looks like.
+      - **UNICEF**: Negotiated and architected a national-scale birth registry for the Ministry of Health.
+      - **Raylytic**: Scaled the AIQNET ecosystem to bridge hospital data systems with research-grade AI.
+      - **Trivago**: Engineered high-traffic backend services handling millions of requests at global scale.
 ---
 
 
-### My Philosophy: "Compliance as Code"
+### Strategic Philosophy: "Compliance as Growth"
 
-Many developers fear regulation. They see HL7 standards, GDPR, and MDR as roadblocks. I see them as architecture constraints that, when handled correctly, create robust, unshakeable systems.
+In highly regulated sectors, technical strategy must be inseparable from regulatory strategy. I view frameworks like MDR, GDPR, and ISO 13485 not as obstacles, but as the foundation for building robust, market-leading products. 
 
-I don't just "patch" compliance at the end. I design systems where compliance is baked into the infrastructure—using FHIR for data exchange and Event-Driven Microservices for auditability.
+My approach is to move beyond passive compliance. I implement "Compliance as Code"—ensuring that security, auditability, and data integrity are baked into the infrastructure from day one. This reduces business risk, streamlines the path to market, and creates systems that are resilient to both technical and regulatory shifts.
 
-### The Toolkit
+### Technical Oversight & Governance
 
-While I believe architecture transcends tools, I am currently most effective with:
+My role is to bridge the gap between deep technical execution and executive vision. While I remain grounded in modern architecture, my focus is on ensuring that our technology stack serves the broader business objectives:
 
-*   **Languages:** Go (Golang), Java, Python, PHP (for legacy migration).
-*   **Infrastructure:** Kubernetes, Cloud Native patterns, Docker.
-*   **The "Hard Stuff":** FHIR, HL7 v2/v3, DICOM, IHE Profiles.
+*   **Scalability & Reliability:** Designing cloud-native ecosystems that handle national-scale data loads without compromising performance.
+*   **Interoperability:** Leveraging international standards to ensure seamless data exchange across diverse healthcare networks.
+*   **Operational Excellence:** Automating workflows to increase developer velocity and reduce the time from concept to clinical deployment.
 
-### Personal
+### Global Perspective
 
-I am a polyglot in both code and life. I speak English, German, Italian, and Albanian, which allows me to lead international teams effectively.
-
-When I’m not mapping FHIR resources or optimizing K8s clusters, you can find me in Leipzig, likely reading about the next shift in HealthTech standards.
+I lead with a global mindset, speaking four languages and having directed international teams across various regulatory jurisdictions. Whether it’s navigating European data privacy laws or negotiating national health registries, I ensure that our technical choices are aligned with the complex realities of the global market.
 
 <hr>
 
-### Need to connect your platform to a hospital network?
+### Leading the Future of HealthTech
 
-Don't reinvent the wheel. I’ve already built the blueprint.
+I help organizations transform complex technical challenges into clear competitive advantages. 
 
-
-<a href="/contact/" class="btn btn-primary">Book a Discovery Call</a>
-<a href="/services/" class="btn btn-secondary">View My Services</a>
+<a href="/contact/" class="btn btn-primary">Executive Consultation</a>
+<a href="/experience/" class="btn btn-secondary">Professional Experience</a>
