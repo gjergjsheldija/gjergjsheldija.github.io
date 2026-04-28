@@ -17,7 +17,7 @@ personal: >-
 
 quickfacts:
   - icon: "briefcase"
-    title: "Engineering Leadership"
+    title: "Head of Engineering | Principal Architect"
     value: "Directing technical strategy and cross-functional teams in high-stakes HealthTech environments."
   - icon: "chart-line"
     title: "Business Impact"
