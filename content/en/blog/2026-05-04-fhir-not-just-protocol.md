@@ -11,7 +11,7 @@ featured_image: "/images/fhir-architecture-friendly.png"
 
 # FHIR Is Not Just a Protocol — And Why That Distinction Matters
 
-Over the past year, building a new clinical platform that combines ePRO, EDC, and medical image analysis, I've had a recurring debate with a colleague about FHIR. His position: FHIR is an interoperability protocol — great for exchanging data between institutions, but not something you build your internal domain model on. My position: that distinction, while technically real, is the wrong one to optimize around — especially in 2025.
+In a recent project, building a new clinical platform that combines ePRO, EDC, and medical image analysis, I've had a recurring debate with a colleague about FHIR. His position: FHIR is an interoperability protocol — great for exchanging data between institutions, but not something you build your internal domain model on. My position: that distinction, while technically real, is the wrong one to optimize around — especially in 2026.
 
 This is my attempt to write that argument down properly.
 
@@ -21,8 +21,8 @@ The platform we're building needed to do three things at once: collect patient-r
 
 My architecture decision was to go FHIR-native across the board:
 
-- **Aidbox** as the FHIR-native backend store for ePRO results, measurement data, and clinical observations
-- **BEDA SDC framework** for the UI layer, built around FHIR resources
+- **FHIR CDR** as the FHIR-native backend store the results, measurement data, and clinical observations
+- **Open source SDC framework** for the UI layer, built around FHIR resources
 - **Keycloak** with SMART on FHIR for permissions and access control
 - For imaging: `ImagingStudy` for study metadata, `Observation` for AI and human measurements, `DiagnosticReport` to tie it together
 
@@ -56,13 +56,13 @@ SQL on FHIR closes that gap entirely.
 
 The [SQL on FHIR specification](https://build.fhir.org/ig/FHIR/sql-on-fhir-v2/) defines a standard way to create flat, tabular **ViewDefinitions** directly over FHIR resources. You define a view once — say, all `Observation` resources for a given LOINC code — and query it with standard SQL. No ETL, no synchronization, no separate model to maintain.
 
-For a platform like uCOA this is significant. It means:
+For a platform like this, the impact is significant. It means:
 
 - **Reporting and analytics** work directly against the FHIR store, without a data warehouse layer
 - **AI pipelines** can consume clean tabular views of measurements without bespoke extraction code
 - **Regulatory submissions** can be assembled from the same store that drives the clinical UI
 
-Combined with a FHIR-native backend like Aidbox — which supports SQL on FHIR natively — this makes FHIR a genuinely robust application storage layer, not just a model you tolerate for regulatory reasons. You get the clinical expressiveness of FHIR resources and the query ergonomics of SQL, in the same system, with no synchronization problem to manage.
+Combined with a FHIR-native backend like FHIR CDR — which supports SQL on FHIR natively — this makes FHIR a genuinely robust application storage layer, not just a model you tolerate for regulatory reasons. You get the clinical expressiveness of FHIR resources and the query ergonomics of SQL, in the same system, with no synchronization problem to manage.
 
 The "FHIR is only for transport" argument was always weakest on persistence. SQL on FHIR removes the last reasonable objection.
 
@@ -70,7 +70,7 @@ The "FHIR is only for transport" argument was always weakest on persistence. SQL
 
 The most concrete argument I have isn't theoretical. It's a scar.
 
-Our current product has Airflow running as an ETL layer. It exists because the internal data model and the outbound format didn't align. Every time data needed to move from one to the other, it had to be transformed, mapped, and validated. That's maintenance cost, that's a failure surface, and that's where bugs live.
+In a previous iteration of the platform there was a running ETL layer. It exists because the internal data model and the outbound format didn't align. Every time data needed to move from one to the other, it had to be transformed, mapped, and validated. That's maintenance cost, that's a failure surface, and that's where bugs live.
 
 My colleague's proposal — a "clean outbound/inbound layer" — is exactly that architecture. He's proposing we build it again, deliberately, knowing what it costs.
 
@@ -112,6 +112,6 @@ FHIR is not just a protocol. It is a domain model, a content standard, and — w
 
 The "interop only" view is a relic of HL7 v2 thinking that doesn't reflect how the ecosystem has evolved.
 
-For a platform like uCOA — combining ePRO, EDC, and medical imaging in a German regulatory context — going FHIR-native wasn't the fashionable choice. It was the pragmatic one. We get a unified data model, no ETL layer, compliance with ePA and DiGA out of the box, SQL-based analytics without a data warehouse, and a clear interface for every component including the imaging backend.
+For a platform like this — combining ePRO, EDC, and medical imaging in a German regulatory context — going FHIR-native wasn't the fashionable choice. It was the pragmatic one. We get a unified data model, no ETL layer, compliance with ePA and DiGA out of the box, SQL-based analytics without a data warehouse, and a clear interface for every component including the imaging backend.
 
 The debate was worth having. But the answer was right.
