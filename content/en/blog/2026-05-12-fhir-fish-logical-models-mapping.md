@@ -5,7 +5,7 @@ draft: false
 description: "Explore how logical models and FISH mapping work together to enable sophisticated FHIR data modeling scenarios with advanced QA workflows, derived results tracking, and comprehensive testing strategies."
 tags: ["FHIR", "HL7", "Data Modeling", "FISH", "Logical Models", "Healthcare IT"]
 categories: ["Technical", "Healthcare Standards", "Architecture"]
-featuredImage: "/images/fhir-logical-models-mapping.png"
+featured_image: "/images/fhir-logical-models-mapping.png"
 ---
 
 # FHIR Data Modeling via FISH: Leveraging Logical Models and Mapping for Advanced Scenarios
