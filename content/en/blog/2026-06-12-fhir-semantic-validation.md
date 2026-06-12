@@ -1,7 +1,7 @@
 ---
 title: "FHIR Transformation Is Solved. Semantic Validation Is Not."
-date: 2026-06-12
-draft: true
+date: 2026-06-12T08:00:00Z
+draft: false
 description: "Passing $validate is not the same as being clinically correct. Here is what semantic validation looks like in practice: terminology coherence using SNOMED CT and LOINC's internal structure, and CQL-based clinical invariants that span resources and time."
 tags: ["FHIR", "Semantic Validation", "CQL", "SNOMED CT", "LOINC", "Patient Safety", "HL7", "FHIRPath", "Terminology"]
 categories: ["Technical", "Healthcare Standards", "Engineering"]
