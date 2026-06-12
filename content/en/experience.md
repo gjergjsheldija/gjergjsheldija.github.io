@@ -10,7 +10,7 @@ resume_label: "Download CV"
 positions:
   - company: "RAYLYTIC"
     company_url: "https://raylytic.com"
-    role: "Head of Engineering | Principal Architect"
+    role: "Principal Architect"
     period: "January 2025 - Present"
     industry: "HealthTech / AI"
     location: "Leipzig, Saxony, Germany"
